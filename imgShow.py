@@ -6,7 +6,7 @@ import cv2
 import time
 
 
-def imgShow(img)
+def imgShow(img):
 
     cv2.namedWindow('image',cv2.WINDOW_NORMAL)
     cv2.resizeWindow('image',600,600)

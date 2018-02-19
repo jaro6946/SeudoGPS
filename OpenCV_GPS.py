@@ -47,7 +47,7 @@ while True:
          print("Oops!  That was no valid number.  Try again...")
 
 
-
+diff=compare(initImage, comparisonImage)
 
 cnts = cv2.findContours(diff.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[1][0:carCount]
 
