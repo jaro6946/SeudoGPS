@@ -48,15 +48,6 @@ while True:
 
 
 
-diff = cv2.absdiff(initImage, comparisonImage)
-diff = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
-
-# th = 1
-# imask =  mask>th
-
-# canvas = np.zeros_like(img2, np.uint8)
-# canvas[imask] = img2[imask]
-
 
 cnts = cv2.findContours(diff.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[1][0:carCount]
 
